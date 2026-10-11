@@ -26,6 +26,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  p, li, dd { hyphens: auto; -webkit-hyphens: auto; }
   .wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
   a { color: var(--text); text-underline-offset: 3px; }
   a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
@@ -82,7 +83,8 @@
   .kompetenz dl { margin-top: 24px; }
   dt { font-size: 14px; font-weight: 600; color: var(--muted); }
   dd { font-size: 17px; line-height: 1.5; color: var(--soft); margin-top: 6px; }
-  dd.erfahrung { min-height: 216px; padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+  dd.erfahrung { min-height: 0; padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+  .schritt-text { margin-bottom: 16px; }
   .plan { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .plan li { display: grid; grid-template-columns: 62px 1fr; gap: 8px; }
   .plan b { color: var(--c); font-weight: 700; }
@@ -227,7 +229,7 @@
   <div class="wrap">
     <div class="kopf">
       <p class="frage">Wieso möchtest du diese Stelle übernehmen?</p>
-      <h2>Ich will Online Marketing führen, weil dort Kreativität, Daten und Technologie zusammenkommen.</h2>
+      <h2>Ich will Online Marketing führen, um Daten, Technologie und Marketing konsequent auf den Geschäftserfolg von AMAG Retail auszurichten.</h2>
     </div>
     <div class="gruende">
       <div>
@@ -240,7 +242,7 @@
       </div>
       <div>
         <h3>Bereit für den Schritt</h3>
-        <p>Ich habe ein Team als ehemaliger Kollege übernommen, Vertrauen aufgebaut und Strukturen geschaffen. Jetzt will ich einen ganzen Bereich verantworten und mit meinem Team messbar zur Profitabilität von AMAG Retail beitragen.</p>
+        <p>Ich habe ein Team aus der Rolle als ehemaliger Kollege übernommen, Vertrauen aufgebaut und klare Strukturen geschaffen. Dabei habe ich gelernt, unterschiedliche Perspektiven zusammenzuführen, Verantwortung zu klären und gemeinsame Ziele konsequent zu verfolgen. Diese Erfahrung möchte ich nutzen, um das Online Marketing von AMAG Retail strategisch weiterzuentwickeln und seinen Beitrag zum Geschäftserfolg messbar zu steigern.</p>
       </div>
     </div>
   </div>
@@ -264,9 +266,9 @@
           <span class="chip">Kernkompetenz</span>
           <dl>
             <dt>Meine Erfahrung</dt>
-            <dd class="erfahrung">Bachelor of Arts in Kommunikationswissenschaft und Medienforschung, Universität Freiburg. In vielen Stationen seither weiter verfeinert, intern wie extern.</dd>
+            <dd class="erfahrung">Bachelor of Arts in Kommunikationswissenschaft und Medienforschung an der Universität Freiburg. Meine berufliche Erfahrung in Trade Marketing, Events und Sponsoring hat mein Verständnis für Zielgruppen, Markenführung und die Zusammenarbeit über verschiedene Marketingdisziplinen hinweg erweitert.</dd>
             <dt>Mein nächster Schritt</dt>
-            <dd>Die digitale Customer Journey noch besser verstehen und die Kundenansprache über alle digitalen Touchpoints hinweg weiterentwickeln.</dd>
+            <dd>Die digitale Customer Journey ganzheitlich weiterentwickeln und die verschiedenen Kanäle konsequent auf die Bedürfnisse der Kunden und die Geschäftsziele von AMAG Retail ausrichten.</dd>
           </dl>
         </div>
       </div>
@@ -278,9 +280,9 @@
           <span class="chip">Kernkompetenz</span>
           <dl>
             <dt>Meine Erfahrung</dt>
-            <dd class="erfahrung">Führungsverantwortung in drei Stationen, zuletzt bei AMAG: Team nach anfänglichem Widerstand übernommen. Heute effizienter, mit weniger Fehlern und zufriedener.</dd>
+            <dd class="erfahrung">Führungsverantwortung in mehreren Stationen, zuletzt bei AMAG. Ein Team aus der Rolle als ehemaliger Kollege übernommen, Vertrauen aufgebaut und die Zusammenarbeit sowie die Strukturen gezielt weiterentwickelt.</dd>
             <dt>Mein nächster Schritt</dt>
-            <dd>Ein neues Team übernehmen, es formen, coachen, fordern und fördern, damit wir gemeinsam mehr erreichen.</dd>
+            <dd>Ein Team übernehmen, seine Stärken gezielt einsetzen und die fachliche sowie persönliche Weiterentwicklung fördern. Durch klare Erwartungen, Eigenverantwortung und gemeinsame Ziele möchte ich ein Umfeld schaffen, in dem das Team seine Leistung kontinuierlich verbessern kann.</dd>
           </dl>
         </div>
       </div>
@@ -288,17 +290,18 @@
       <div class="kompetenz ad">
         <div class="saeule-box" aria-hidden="true"><div class="saeule"><div class="fuellung" style="--f:45%"></div></div></div>
         <div class="text">
-          <h3>Advertising</h3>
+          <h3>Digital Marketing und Performance</h3>
           <span class="chip">Entwicklungsfeld</span>
           <dl>
             <dt>Meine Erfahrung</dt>
             <dd class="erfahrung">36 LOIs mit Google, Meta und Aymo umgesetzt, per Dashboard ausgewertet und reportet.</dd>
             <dt>Mein nächster Schritt</dt>
             <dd>
+              <p class="schritt-text">Ich möchte mein Verständnis für Digital Advertising, Performance Marketing und Marketing Analytics gezielt vertiefen. Dazu plane ich eine berufsbegleitende Weiterbildung mit Schwerpunkt auf digitaler Kanalsteuerung, datenbasierter Erfolgsmessung und Marketingeffektivität.</p>
               <ul class="plan">
                 <li><b>Sofort</b><span>Analytics und Tracking, Google-Zertifizierung GA4</span></li>
                 <li><b>Sofort</b><span>Google Ads vertiefen, Google-Ads-Zertifizierung</span></li>
-                <li><b>2027</b><span>Weiterbildung SEO, SEA und Analytics</span></li>
+                <li><b>2027</b><span>Weiterbildung SEO, SEA und Analytics: CAS Digital Marketing an der ZHAW</span></li>
               </ul>
             </dd>
           </dl>
@@ -391,10 +394,10 @@
           <p class="tage">Tag 21–50</p>
           <h3>Standort bestimmen und Prioritäten setzen</h3>
           <ul>
-            <li>Bestehendes Set-up prüfen: Kanäle, Prozesse, Tools, Budget und Agenturen</li>
-            <li>Gespräche mit Sales, Front, IT und Agenturen</li>
-            <li>Zwei Prioritäten mit klaren Zielen und Erfolgskriterien gemeinsam mit dem Team festlegen</li>
-            <li class="mark ae"><i class="chip-ae">Ändern</i><span>Evenito vereinfachen und bereinigen, damit das Team entlastet wird</span></li>
+            <li>Bestehendes Set-up analysieren: Kanäle, Prozesse, Tools, Budget, Agenturen und Erfolgsmessung</li>
+            <li>Gespräche mit Sales, Front, IT und Agenturen führen, um Anforderungen und Optimierungspotenziale entlang der Customer Journey zu verstehen</li>
+            <li>Gemeinsam mit dem Team zwei priorisierte Handlungsfelder definieren und für jedes Feld Ausgangslage, Zielsetzung, erwartete Wirkung und Erfolgskriterien festlegen</li>
+            <li class="mark ae"><i class="chip-ae">Ändern</i><span>Mögliche Effizienzpotenziale in bestehenden Tools und Prozessen identifizieren und priorisieren. Die Bereinigung von Evenito prüfen, sofern sich dadurch ein relevanter Nutzen für das Team ergibt.</span></li>
           </ul>
         </div>
       </div>
@@ -405,9 +408,9 @@
           <p class="tage">Tag 51–100</p>
           <h3>Umsetzen und messen</h3>
           <ul>
-            <li class="mark ae"><i class="chip-ae">Ändern</i><span>Massnahmen zu den Prioritäten umsetzen</span></li>
-            <li>Wirkung anhand der KPIs messen und Optimierungen ableiten</li>
-            <li>Gemeinsame Standards und Abläufe für alle Kanäle festlegen</li>
+            <li class="mark ae"><i class="chip-ae">Ändern</i><span>Erste Massnahmen in den priorisierten Handlungsfeldern gemeinsam mit dem Team umsetzen</span></li>
+            <li>Die Wirkung anhand definierter Ausgangswerte und KPIs beurteilen und daraus konkrete Optimierungen ableiten</li>
+            <li>Transparente Standards für Ziele, Erfolgsmessung und regelmässige Performance-Reviews etablieren</li>
             <li>Teamziele festlegen und daraus die persönlichen Ziele für jede Person ableiten</li>
           </ul>
         </div>
@@ -419,8 +422,8 @@
           <p class="tage">Tag 100</p>
           <h3>Bilanz</h3>
           <ul>
-            <li>Bilanz mit Gianfranco und Mark</li>
-            <li>Roadmap für die nächsten Monate mit den nötigen Entscheidungsgrundlagen</li>
+            <li>Gemeinsame Bilanz mit Gianfranco und Mark zu Ausgangslage, erreichten Fortschritten und identifizierten Handlungsfeldern</li>
+            <li>Priorisierte Roadmap für die nächsten Monate mit erwarteter Wirkung, Ressourcenbedarf und den erforderlichen Managemententscheidungen</li>
           </ul>
         </div>
       </div>
@@ -495,6 +498,20 @@
   ausrichten();
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(ausrichten, 150); });
   if (document.fonts) document.fonts.ready.then(ausrichten);
+
+  /* Säulen: "Mein nächster Schritt" in allen Spalten auf gleicher Höhe */
+  function angleichen() {
+    ['.kompetenz h3', 'dd.erfahrung'].forEach(sel => {
+      const els = [...document.querySelectorAll(sel)];
+      els.forEach(d => d.style.minHeight = '');
+      if (!desktop()) return;
+      const h = Math.max(...els.map(d => d.getBoundingClientRect().height));
+      els.forEach(d => d.style.minHeight = h + 'px');
+    });
+  }
+  angleichen();
+  window.addEventListener('resize', () => setTimeout(angleichen, 160));
+  if (document.fonts) document.fonts.ready.then(angleichen);
 
   /* Animationen starten, sobald der Abschnitt sichtbar wird */
   function abspielen(el) {
